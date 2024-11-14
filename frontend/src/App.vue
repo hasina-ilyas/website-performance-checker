@@ -1,53 +1,42 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
-  <div>
-    <nav class="mega menu navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="nav bar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand" href="https://www.seofrequency.com/"><img src="https://seofrequency.com/seositecheckup/assets/flax_images/logos/logo1.png" alt="SEO Frequency" i-amphtml-auto-lightbox-visited=""></a>
+  <div class="bg-green-400">
+    <!-- Header -->
+    <header class="bg-white shadow">
+      <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <div class="flex items-center">
+          <span class="text-lg font-bold text-gray-800">Performance Checker</span>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right hidden-md hidden-sm hidden-xs">
-            <li><a class="btn-light btn-radius btn-brd top-btn" href="https://seofrequency.com/seositecheckup/home/sign_up"><i class="fa fa-angle-double-right"></i><strong> SIGN UP </strong>FREE</a></li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right menu-top">
-            <li class="active"><a href="https://seofrequency.com/seositecheckup/googles">Google &nbsp;2024</a></li>
-            <li><a href="#" target="_blank"><i class="fas fa-tools"></i>Articles</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="#">Free Tools</a></li>
-            <li><a href="#">Recent</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Log In</a></li>
-
-          </ul>
-        </div>
+        <nav class="flex space-x-6 text-gray-600">
+          <a href="#" class="hover:text-gray-800">Articles</a>
+          <a href="#" class="hover:text-gray-800">Packages</a>
+          <a href="#" class="hover:text-gray-800">Free Tools</a>
+          <a href="#" class="hover:text-gray-800">Recent</a>
+          <a href="#" class="hover:text-gray-800">Contact</a>
+          <a href="#" class="hover:text-gray-800">Log In</a>
+          <a href="#" class="bg-yellow-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-600">Sign Up Free</a>
+        </nav>
       </div>
-    </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="flex flex-col items-center text-center py-24">
+      <h1 class="text-3xl font-bold text-white mb-2">Best SEO Company</h1>
+      <h2 class="text-2xl font-bold text-white mb-4">Technical SEO Checklist</h2>
+      <p class="text-white text-lg mb-8">Search engine optimization (SEO) Made Easy<br>Analyzing and tracking the SEO page quickly and effectively</p>
+
+      <!-- Search Box -->
+      <div class="flex items-center bg-white rounded-full shadow-lg p-4 max-w-md w-full">
+        <input type="text" placeholder="Type web address..." class="flex-1 bg-transparent text-gray-700 placeholder-gray-400 focus:outline-none">
+        <button class="bg-orange-500 text-white py-2 px-6 rounded-full hover:bg-orange-600 font-semibold">SEO Analysis</button>
+      </div>
+    </section>
   </div>
-</template>
+  </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
 </style>
